@@ -22,8 +22,14 @@ public class LogginLab {
         public boolean thresholdExceeds(Integer limit) {
             return (this.threshold > limit);
             }
-        public boolean thresholdReached(Integer limit){
-            return (this.threshold == limit);
+        public boolean thresholdReached(Integer l){
+            /* if (threshold > l){
+            return thresholdReached(l); }
+            else {
+                return false;
+            }
+             */
+           return(this.threshold > l);
             }
     }
 
